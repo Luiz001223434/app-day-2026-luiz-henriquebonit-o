@@ -1,21 +1,173 @@
-MIT License
 
-Copyright (c) 2026 Luiz001223434
+100%
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Universo dos Fios — cuidados capilares</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f1;--card:#fff;--ink:#4a342b;--soft:#7d6558;--rose:#c4868a;--rose2:#a96a70;--nude:#ecd9ca;--beige:#f4e8dd;--line:#e6d4c6;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#221916;--card:#2d221e;--ink:#f1e4d9;--soft:#c3ab9d;--rose:#d9a0a4;--rose2:#e3b3b6;--nude:#3b2c26;--beige:#33261f;--line:#4a3830;--on:#2b1d19;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#221916;--card:#2d221e;--ink:#f1e4d9;--soft:#c3ab9d;--rose:#d9a0a4;--rose2:#e3b3b6;--nude:#3b2c26;--beige:#33261f;--line:#4a3830;--on:#2b1d19;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:84px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(2rem,5vw,3rem)}h3{font-size:1.45rem}p{margin:.3em 0 1em}
+a{color:var(--rose2)}.wrap{max-width:1100px;margin:auto;padding:0 20px}section{padding:72px 0}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;min-height:64px;flex-wrap:wrap}
+.logo{font:600 1.55rem "Cormorant Garamond",serif;color:var(--ink);text-decoration:none;margin-right:auto}
+nav{display:flex;gap:4px;flex-wrap:wrap}nav a{padding:6px 10px;border-radius:20px;color:var(--soft);text-decoration:none;font-size:.92rem}nav a:hover{background:var(--nude);color:var(--ink)}
+input,select,textarea,button{font:inherit;color:inherit}
+input,select,textarea{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;width:100%}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+.btn{background:var(--rose2);color:var(--on);border:0;border-radius:30px;padding:12px 26px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;border:1.5px solid var(--rose2);color:var(--rose2)}
+#q{max-width:210px}.ic{background:var(--nude);border:0;border-radius:50%;width:40px;height:40px;cursor:pointer}
+.hero{background:linear-gradient(120deg,var(--beige),var(--nude));overflow:hidden;padding:0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:20px;min-height:540px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem)}.hero p{color:var(--soft);max-width:34em}
+.hero svg{width:100%;height:auto;max-height:520px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}
+.card h3{margin-right:34px}.card small{color:var(--soft)}.card .row{font-size:.95rem;margin:.35em 0}
+.fav{position:absolute;top:14px;right:14px;background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--rose)}
+.tag{display:inline-block;background:var(--nude);border-radius:20px;padding:2px 12px;font-size:.8rem;margin:0 6px 6px 0}
+.alt{background:var(--beige)}
+.grp{margin:0 0 20px;border:0;padding:0}.grp legend{font-weight:600;margin-bottom:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px}
+.chips span{display:block;border:1.5px solid var(--line);background:var(--card);border-radius:30px;padding:8px 16px;font-size:.95rem}
+.chips input:checked+span{background:var(--rose2);border-color:var(--rose2);color:var(--on)}
+.chips input:focus-visible+span{outline:3px solid var(--rose);outline-offset:2px}
+.res{margin-top:28px;display:none}.res.on{display:block}.res ul{padding-left:20px}
+.ctl{display:flex;gap:14px;flex-wrap:wrap;align-items:end;margin-bottom:22px}.ctl>div{min-width:170px;flex:1}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px;min-height:84px;font-size:.78rem}
+.cal b{display:block;font-size:.85rem}.cal .hd{min-height:0;text-align:center;background:none;border:0;font-weight:600}
+.H{background:#f2d5d8!important}.N{background:#ead7bd!important}.R{background:#d9bfae!important}.cal .H,.cal .N,.cal .R{color:#3f2a22}
+.lg span{margin-right:14px}.lg i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font:600 1.3rem "Cormorant Garamond",serif}
+.thumb{height:110px;border-radius:12px;margin-bottom:12px;display:grid;place-items:center;font-size:2.4rem}
+dialog{border:1px solid var(--line);border-radius:20px;background:var(--card);color:var(--ink);max-width:640px;width:calc(100% - 32px);padding:28px}
+dialog::backdrop{background:#0006}.empty{color:var(--soft);padding:12px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{background:var(--nude);padding:34px 0;font-size:.9rem;color:var(--soft)}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:36px}.hero svg{max-height:300px}#q{max-width:none;flex:1}.two{grid-template-columns:1fr}.cal div{min-height:64px;padding:4px;font-size:.68rem}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="wrap bar">
+<a class="logo" href="#inicio">Universo dos Fios</a>
+<nav aria-label="Principal"><a href="#tipo">Meu cabelo</a><a href="#cronograma">Cronograma</a><a href="#guia">Guia</a><a href="#ingredientes">Ingredientes</a><a href="#produtos">Produtos</a><a href="#artigos">Artigos</a><a href="#favoritos">Favoritos ♥</a></nav>
+<input id="q" type="search" placeholder="Buscar conteúdos" aria-label="Buscar conteúdos">
+<button class="ic" id="tema" aria-label="Alternar tema claro/escuro">◐</button></div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><div>
+<h1>Seu cabelo, sua identidade, seu cuidado</h1>
+<p>Descubra o perfil dos seus fios, monte um cronograma capilar sob medida e aprenda com conteúdo baseado em ciência cosmética.</p>
+<a class="btn" href="#tipo">Descubra seu tipo de cabelo</a> <a class="btn ghost" href="#cronograma">Montar cronograma</a></div>
+<svg viewBox="0 0 400 460" role="img" aria-label="Ilustração de fios de cabelo ondulados e brilhantes"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a4a38"/><stop offset=".5" stop-color="#b57f63"/><stop offset="1" stop-color="#5d3628"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<g fill="none" stroke-linecap="round"><path d="M190 10C60 80 330 150 190 230S60 380 190 450" stroke="url(#g1)" stroke-width="46"/><path d="M130 20C10 100 280 160 140 240S20 380 140 450" stroke="url(#g1)" stroke-width="34" opacity=".85"/><path d="M250 10C140 90 390 150 260 230S160 380 260 450" stroke="url(#g1)" stroke-width="34" opacity=".8"/><path d="M190 10C60 80 330 150 190 230S60 380 190 450" stroke="url(#g2)" stroke-width="8" transform="translate(-9 0)"/><path d="M260 10C150 90 390 150 260 230S160 380 260 450" stroke="url(#g2)" stroke-width="5" transform="translate(-6 0)"/></g></svg></div></section>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<section><div class="wrap"><h2>O que você encontra aqui</h2><div class="grid" id="servicos"></div></div></section>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+<section class="alt" id="tipo"><div class="wrap"><h2>Descubra seu tipo de cabelo</h2><p>Responda ao questionário e receba seu perfil capilar com recomendações personalizadas.</p>
+<form id="quiz"></form><div class="res card" id="perfil" aria-live="polite"></div></div></section>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+<section id="cronograma"><div class="wrap"><h2>Cronograma capilar</h2><p>Escolha a frequência de lavagem e veja os dias de hidratação, nutrição e reconstrução.</p>
+<div class="ctl"><div><label for="freq">Lavagens por semana</label><select id="freq"></select></div>
+<div><label for="ress">Nível de ressecamento</label><select id="ress"><option value="0">Leve</option><option value="1" selected>Moderado</option><option value="2">Intenso</option></select></div>
+<div><label for="vis">Visualização</label><select id="vis"><option value="s">Semanal</option><option value="m">Mensal</option></select></div></div>
+<p class="lg"><span><i class="H"></i>Hidratação</span><span><i class="N"></i>Nutrição</span><span><i class="R"></i>Reconstrução</span><span><i style="background:var(--card);border:1px solid var(--line)"></i>Sem lavagem</span></p>
+<div class="cal" id="cal"></div><p id="calnote" class="empty"></p></div></section>
+
+<section class="alt" id="guia"><div class="wrap"><h2>Guia de cuidados</h2><div id="guiaL"></div></div></section>
+
+<section id="ingredientes"><div class="wrap"><h2>Biblioteca de ingredientes</h2><div class="grid" id="ingL"></div></div></section>
+
+<section class="alt" id="produtos"><div class="wrap"><h2>Avaliação de produtos</h2>
+<div class="ctl"><div><label for="pq">Pesquisar produto ou ingrediente</label><input id="pq" type="search" placeholder="Ex.: pantenol, máscara"></div>
+<div><label for="pt">Tipo de cabelo</label><select id="pt"><option value="">Todos</option><option>Liso</option><option>Ondulado</option><option>Cacheado</option><option>Crespo</option></select></div>
+<div><label for="pe">Etapa</label><select id="pe"><option value="">Todas</option><option>Hidratação</option><option>Nutrição</option><option>Reconstrução</option><option>Limpeza</option><option>Finalização</option></select></div></div>
+<div class="grid" id="prodL"></div>
+<h3 style="margin-top:44px">Cadastrar um produto</h3>
+<form id="pform" class="card"><div class="two"><div><label for="n">Nome *</label><input id="n" required maxlength="80"></div><div><label for="c">Composição (INCI)</label><input id="c" maxlength="300"></div>
+<div><label for="a">Ingredientes ativos</label><input id="a" maxlength="150"></div><div><label for="i">Indicação</label><input id="i" maxlength="150"></div>
+<div><label for="t">Tipo de cabelo</label><select id="t"><option>Todos</option><option>Liso</option><option>Ondulado</option><option>Cacheado</option><option>Crespo</option></select></div>
+<div><label for="e">Etapa do cronograma</label><select id="e"><option>Hidratação</option><option>Nutrição</option><option>Reconstrução</option><option>Limpeza</option><option>Finalização</option></select></div></div>
+<label for="b">Benefícios</label><textarea id="b" rows="2" maxlength="250"></textarea><p></p><button class="btn">Salvar produto</button> <span id="pmsg"></span></form></div></section>
+
+<section id="artigos"><div class="wrap"><h2>Dicas e artigos</h2><div class="ctl"><div><label for="ac">Categoria</label><select id="ac"></select></div></div><div class="grid" id="artL"></div></div></section>
+
+<section class="alt" id="favoritos"><div class="wrap"><h2>Meus favoritos</h2><div class="grid" id="favL"></div></div></section>
+</main>
+<footer><div class="wrap"><b>Universo dos Fios</b> — conteúdo educativo. Não substitui a avaliação de um dermatologista ou tricologista, principalmente em caso de queda intensa, feridas ou coceira persistente no couro cabeludo. Seus favoritos, perfil e produtos ficam salvos apenas neste navegador.</div></footer>
+<dialog id="dlg"><div id="dbody"></div><p><button class="btn ghost" onclick="dlg.close()">Fechar</button></p></dialog>
+
+<script>
+const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const get=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v??d}catch(e){return d}},set=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const SERV=[['Descubra seu perfil','Questionário com 6 perguntas e recomendações personalizadas.','#tipo'],['Cronograma automático','Calendário semanal ou mensal com hidratação, nutrição e reconstrução.','#cronograma'],['Guia de cuidados','Oito guias sobre porosidade, frizz, química, calor e couro cabeludo.','#guia'],['Ingredientes','Função, benefícios e indicação dos ativos mais usados.','#ingredientes'],['Avaliação de produtos','Consulte composição e etapa ideal. Cadastre os seus.','#produtos'],['Artigos','Saúde e beleza capilar por categoria.','#artigos']];
+const GUIA=[['Como identificar a porosidade','Teste do fio: após lavar sem condicionador, solte um fio limpo em um copo d’água. Se boia por muito tempo, a porosidade tende a ser baixa (cutícula fechada). Se afunda devagar, média. Se afunda rápido, alta. Observe também: cabelo que demora a molhar e a secar sugere baixa; que seca muito rápido e embaraça sugere alta. O teste é uma pista, não um laudo; resíduos de produto alteram o resultado.'],['Como cuidar de cabelos ressecados','Priorize hidratação com umectantes (glicerina, pantenol, aloe) e selagem com óleos ou manteigas. Use shampoo suave, água morna em vez de quente e condicionador do comprimento às pontas. Evite lavar com excesso de frequência e reduza o calor. Um leave-in diário ajuda a manter a água dentro do fio.'],['Como recuperar cabelos danificados','Fios danificados perdem massa proteica e elasticidade. Alterne reconstrução (proteínas hidrolisadas, queratina, aminoácidos) com nutrição e hidratação para não deixar o fio rígido. Corte as pontas quebradas, que não se regeneram, e proteja de calor e atrito. Se o fio estica e não volta ou quebra molhado, o dano é intenso.'],['Como reduzir o frizz','O frizz aparece quando a cutícula está levantada e o fio absorve umidade do ar. Hidrate, sele com óleo leve ou silicone solúvel, evite toalha de algodão (use camiseta ou microfibra), não escove a seco cabelos cacheados e finalize com difusor em temperatura média ou secagem natural.'],['Como cuidar dos cabelos com química','Coloração, descoloração e alisamentos abrem a cutícula e alteram a estrutura do fio. Espere o intervalo recomendado entre procedimentos, use shampoo sem sulfatos agressivos, faça reconstrução e nutrição periodicamente e proteja da luz solar. Prefira realizar química em salão com profissional e teste de mecha.'],['Como manter a definição dos cachos','Aplique os produtos com o cabelo molhado, em camadas (leave-in, creme e gel ou mousse), e use a técnica de “praying hands” ou “scrunch”. Não mexa nos cachos enquanto secam. Difusor com baixa velocidade ou secagem ao ar. Durma com abacaxi (coque alto frouxo) ou fronha de cetim.'],['Como proteger os fios do calor','Use protetor térmico antes de secador, prancha ou babyliss. Mantenha a temperatura abaixo de 180 °C (menos em cabelos finos ou químicos) e o secador a pelo menos 15 cm. Seque até estar 80% seco ao ar antes de usar calor intenso e evite passar prancha repetidas vezes na mesma mecha.'],['Como cuidar do couro cabeludo','O couro cabeludo é pele: lave-o com shampoo adequado ao seu tipo (oleoso, seco, com descamação) e massageie com a ponta dos dedos. Esfoliação suave, uma vez por semana ou quinzena, remove resíduos. Evite produtos pesados na raiz e enxágue bem. Coceira, feridas ou queda intensa precisam de avaliação médica.']];
+const ING=[['Óleo de coco','Emoliente e selante. Penetra no fio e reduz a perda de proteína.','Reduz quebra, dá brilho e maciez.','Cabelos ressecados e porosos; use pouco em cabelos finos e oleosos.'],['Óleo de argan','Óleo leve rico em vitamina E e ácidos graxos.','Controla frizz, dá brilho sem pesar.','Todos os tipos, finalização e selagem.'],['Óleo de oliva','Emoliente rico em ácido oleico, que forma película protetora.','Maciez e nutrição, auxilia na selagem.','Cabelos grossos, crespos e ressecados.'],['Manteiga de karité','Manteiga rica em ácidos graxos e vitaminas A e E.','Nutrição profunda e proteção contra o ressecamento.','Cabelos crespos, cacheados e danificados.'],['Pantenol','Pró-vitamina B5, umectante que retém água no fio.','Hidrata, dá elasticidade e fortalece.','Todos os tipos; ótimo para ressecados.'],['Queratina','Proteína hidrolisada que preenche falhas da cutícula.','Reconstrói, reduz frizz e porosidade.','Cabelos danificados; não abuse em baixa porosidade.'],['Aloe vera','Gel rico em polissacarídeos e água, com ação calmante.','Hidrata e acalma o couro cabeludo.','Todos os tipos; couro cabeludo sensível.'],['Glicerina','Umectante que atrai água do ambiente.','Hidratação intensa e maciez.','Todos; em clima muito seco ou muito úmido pode ressecar ou causar frizz.'],['Ceramidas','Lipídios naturais que unem as células da cutícula.','Selam a cutícula e protegem do dano.','Cabelos com química e porosos.'],['Proteínas vegetais','Proteínas hidrolisadas de trigo, arroz, soja ou milho.','Reforçam a fibra e dão corpo.','Cabelos fracos, quebradiços e com química.']];
+const PROD0=[['Máscara de hidratação com pantenol e glicerina','Aqua, Cetearyl Alcohol, Glycerin, Panthenol, Behentrimonium Chloride, Aloe Barbadensis Leaf Juice','Pantenol, glicerina, aloe','Cabelos ressecados e opacos','Todos','Reposição de água, maciez e brilho','Hidratação'],['Máscara nutritiva com karité e argan','Aqua, Cetyl Alcohol, Butyrospermum Parkii Butter, Argania Spinosa Oil, Glycerin','Karité, óleo de argan','Cabelos secos e sem brilho','Cacheado','Reposição de lipídios e proteção','Nutrição'],['Reconstrutor com queratina e proteínas vegetais','Aqua, Hydrolyzed Keratin, Hydrolyzed Wheat Protein, Cetearyl Alcohol, Ceramide NP','Queratina, proteínas, ceramidas','Cabelos danificados e com química','Todos','Reposição de massa proteica e redução de quebra','Reconstrução'],['Shampoo suave sem sulfatos','Aqua, Cocamidopropyl Betaine, Sodium Cocoyl Isethionate, Panthenol, Aloe Barbadensis Leaf Juice','Aloe, pantenol','Limpeza de couro cabeludo sensível','Ondulado','Limpeza sem ressecar','Limpeza'],['Leve-in com protetor térmico','Aqua, Glycerin, Dimethicone, Hydrolyzed Keratin, Panthenol, Argania Spinosa Oil','Pantenol, argan','Frizz e proteção contra calor','Liso','Controle de frizz e proteção térmica','Finalização'],['Creme de pentear para cachos','Aqua, Glycerin, Cetearyl Alcohol, Cocos Nucifera Oil, Butyrospermum Parkii Butter','Coco, karité, glicerina','Definição e controle de volume','Crespo','Definição, maciez e hidratação','Finalização']];
+const ART=[['Rotina para cabelos cacheados em 5 passos','Cachos','🌀','Limpe o couro cabeludo, condicione do comprimento às pontas, aplique leave-in, finalize com creme e gel e seque com difusor. Para a definição durar, aplique tudo com o cabelo molhado e não toque nos cachos enquanto secam. Uma vez por semana, alterne com máscara.'],['Cronograma capilar: mitos e verdades','Cuidados','📅','Fazer só nutrição não resolve tudo: cabelos precisam de equilíbrio entre água (hidratação), lipídios (nutrição) e proteínas (reconstrução). Excesso de proteína deixa o fio rígido; excesso de óleo, pesado. Observe elasticidade e brilho para ajustar a frequência.'],['Como ler o rótulo de um produto capilar','Ingredientes','🔬','Os ingredientes aparecem em ordem decrescente de concentração. Procure umectantes no início da lista para hidratar, lipídios para nutrir e proteínas hidrolisadas para reconstruir. Palavras como “vegano” ou “livre de” não garantem efeito; avalie a fórmula completa.'],['Queda de cabelo: quando procurar ajuda','Saúde','🩺','Perder de 50 a 100 fios por dia é normal. Aumento súbito de queda, falhas, coceira intensa ou descamação persistente pedem avaliação médica. Estresse, deficiências nutricionais, mudanças hormonais e doenças da tireoide estão entre as causas.'],['Proteção solar para os fios','Cuidados','☀️','A radiação UV oxida a queratina e desbota a cor. Use chapéu e protetores capilares com filtro UV, além de lavar o cabelo após piscina e mar para remover cloro e sal.'],['Transição capilar sem sofrer','Cachos','🌿','Corte gradual das pontas, hidratação reforçada e finalizações em camadas ajudam a equilibrar a linha de transição entre o liso e o natural. Evite manipular muito a região de emenda, que é a mais frágil.']];
+const TIPOS={1:'liso',2:'ondulado',3:'cacheado',4:'crespo'};
+const FAV_ITEMS=()=>[...GUIA.map((g,i)=>({id:'g'+i,k:'Guia',t:g[0],d:g[1]})),...ING.map((g,i)=>({id:'i'+i,k:'Ingrediente',t:g[0],d:g[1]+' '+g[3]})),...prods().map((p,i)=>({id:p.id,k:'Produto',t:p.n,d:p.c+' '+p.ind})),...ART.map((a,i)=>({id:'a'+i,k:'Artigo',t:a[0],d:a[3]}))];
+const prods=()=>[...PROD0.map((p,i)=>({id:'p'+i,n:p[0],c:p[1],a:p[2],ind:p[3],t:p[4],b:p[5],e:p[6]})),...get('myprods',[]).map(p=>({...p,own:1}))];
+let fav=get('fav',[]);
+const fbtn=id=>`<button class="fav" data-fav="${id}" aria-label="Favoritar" aria-pressed="${fav.includes(id)}">${fav.includes(id)?'♥':'♡'}</button>`;
+function init(){
+$('#servicos').innerHTML=SERV.map(s=>`<a class="card" href="${s[2]}" style="text-decoration:none;color:inherit"><h3>${s[0]}</h3><p>${s[1]}</p></a>`).join('');
+$('#guiaL').innerHTML=GUIA.map((g,i)=>`<details id="g${i}"><summary>${g[0]}</summary><p>${g[1]}</p><button class="btn ghost" data-fav="g${i}">${fav.includes('g'+i)?'♥ Favoritado':'♡ Favoritar'}</button></details>`).join('');
+$('#ingL').innerHTML=ING.map((g,i)=>`<div class="card" id="i${i}">${fbtn('i'+i)}<h3>${g[0]}</h3><p class="row">${g[1]}</p><p class="row"><b>Benefícios:</b> ${g[2]}</p><p class="row"><b>Indicação:</b> ${g[3]}</p></div>`).join('');
+const cats=[...new Set(ART.map(a=>a[1]))];$('#ac').innerHTML='<option value="">Todas</option>'+cats.map(c=>`<option>${c}</option>`).join('');
+$('#freq').innerHTML=[1,2,3,4,5,6,7].map(n=>`<option value="${n}"${n==3?' selected':''}>${n}x</option>`).join('');
+drawProd();drawArt();drawFav();drawCal();
+}
+function drawProd(){const q=$('#pq').value.toLowerCase(),t=$('#pt').value,e=$('#pe').value;
+const l=prods().filter(p=>(!q||(p.n+p.c+p.a+p.ind).toLowerCase().includes(q))&&(!t||p.t==t||p.t=='Todos')&&(!e||p.e==e));
+$('#prodL').innerHTML=l.length?l.map(p=>`<div class="card">${fbtn(p.id)}<h3>${E(p.n)}</h3><span class="tag">${E(p.e)}</span><span class="tag">${E(p.t)}</span><p class="row"><b>Composição:</b> ${E(p.c||'—')}</p><p class="row"><b>Ativos:</b> ${E(p.a||'—')}</p><p class="row"><b>Indicação:</b> ${E(p.ind||'—')}</p><p class="row"><b>Benefícios:</b> ${E(p.b||'—')}</p>${p.own?`<button class="btn ghost" data-del="${p.id}">Remover</button>`:''}</div>`).join(''):'<p class="empty">Nenhum produto encontrado. Ajuste os filtros ou cadastre um produto abaixo.</p>'}
+function drawArt(){const c=$('#ac').value;const bg=['#f2d5d8','#ead7bd','#d9bfae','#f4e8dd'];
+$('#artL').innerHTML=ART.map((a,i)=>({a,i})).filter(x=>!c||x.a[1]==c).map(({a,i})=>`<article class="card">${fbtn('a'+i)}<div class="thumb" style="background:${bg[i%4]}">${a[2]}</div><small>${a[1]}</small><h3>${a[0]}</h3><p>${a[3].slice(0,110)}…</p><button class="btn ghost" data-art="${i}">Ler artigo</button></article>`).join('')}
+function drawFav(){const l=FAV_ITEMS().filter(i=>fav.includes(i.id));
+$('#favL').innerHTML=l.length?l.map(i=>`<div class="card">${fbtn(i.id)}<small>${i.k}</small><h3>${E(i.t)}</h3><p class="row">${E(i.d.slice(0,120))}…</p></div>`).join(''):'<p class="empty">Você ainda não tem favoritos. Toque no ♡ de qualquer conteúdo para guardá-lo aqui.</p>'}
+document.addEventListener('click',e=>{
+const f=e.target.closest('[data-fav]');if(f){const id=f.dataset.fav;fav=fav.includes(id)?fav.filter(x=>x!=id):[...fav,id];set('fav',fav);init();return}
+const a=e.target.closest('[data-art]');if(a){const x=ART[a.dataset.art];$('#dbody').innerHTML=`<small>${x[1]}</small><h3>${x[0]}</h3><p>${x[3]}</p>`;dlg.showModal();return}
+const d=e.target.closest('[data-del]');if(d){set('myprods',get('myprods',[]).filter(p=>p.id!=d.dataset.del));fav=fav.filter(x=>x!=d.dataset.del);set('fav',fav);init()}
+const r=e.target.closest('[data-res]');if(r){const x=r.dataset.res.split(',');$('#freq').value=x[0];$('#ress').value=x[1];drawCal();$('#cronograma').scrollIntoView()}});
+['#pq','#pt','#pe'].forEach(s=>$(s).addEventListener('input',drawProd));$('#ac').addEventListener('input',drawArt);
+$('#pform').addEventListener('submit',e=>{e.preventDefault();const n=$('#n').value.trim();if(!n)return;
+const l=get('myprods',[]);l.push({id:'u'+Date.now(),n,c:$('#c').value.trim(),a:$('#a').value.trim(),ind:$('#i').value.trim(),t:$('#t').value,b:$('#b').value.trim(),e:$('#e').value});
+set('myprods',l);e.target.reset();$('#pmsg').textContent='Produto salvo.';setTimeout(()=>$('#pmsg').textContent='',2500);init()});
+// Questionário
+const Q=[['tipo','Tipo de cabelo',['1 · Liso','2 · Ondulado','3 · Cacheado','4 · Crespo']],['esp','Espessura do fio',['Fina','Média','Grossa']],['por','Porosidade',['Baixa','Média','Alta']],['cur','Curvatura',['A · aberta','B · média','C · fechada']],['den','Densidade capilar',['Baixa','Média','Alta']],['res','Nível de ressecamento',['Leve','Moderado','Intenso']]];
+$('#quiz').innerHTML=Q.map(g=>`<fieldset class="grp"><legend>${g[1]}</legend><div class="chips">${g[2].map((o,i)=>`<label><input type="radio" name="${g[0]}" value="${i}" required><span>${o}</span></label>`).join('')}</div></fieldset>`).join('')+'<button class="btn">Ver meu perfil capilar</button>';
+$('#quiz').addEventListener('submit',e=>{e.preventDefault();const v={};Q.forEach(g=>v[g[0]]=+new FormData(e.target).get(g[0]));set('perfil',v);showPerfil(v);});
+function showPerfil(v){const T=['liso','ondulado','cacheado','crespo'],ES=['fino','médio','grosso'],PO=['baixa','média','alta'],CU=['A','B','C'],DE=['baixa','média','alta'],RE=['leve','moderado','intenso'];
+const r=[];
+r.push([`Fios ${T[v.tipo]}s, curvatura ${CU[v.cur]}`,['Cabelos lisos tendem a ficar oleosos mais rápido: lave a raiz com mais frequência e condicione só o comprimento.','Cabelos ondulados pedem leveza: cremes leves e mousse mantêm a ondulação sem pesar.','Cachos precisam de umidade constante: finalize em camadas e evite escovar a seco.','Cabelos crespos ressecam mais, pois o sebo percorre menos o fio: priorize hidratação, umectantes e selagem.'][v.tipo]]);
+r.push([`Porosidade ${PO[v.por]}`,['Cutícula mais fechada: prefira texturas leves e use calor suave (touca térmica) para ajudar a penetração. Evite excesso de proteína e óleos pesados.','Equilíbrio entre absorção e retenção: mantenha o cronograma balanceado entre hidratação, nutrição e reconstrução.','Cutícula aberta: foque em reconstrução e selagem com manteigas e óleos, e finalize com leave-in para reter a água.'][v.por]]);
+r.push([`Fio ${ES[v.esp]}, densidade ${DE[v.den]}`,[`Fios finos pedem produtos leves e pouca quantidade para não pesar.`,`Fios médios aceitam a maioria das texturas; ajuste conforme o resultado.`,`Fios grossos aguentam texturas ricas, como máscaras cremosas e manteigas.`][v.esp]+' '+['Com pouca densidade, aplique produto com moderação e evite finalizadores pesados.','Densidade média: aplique por seções para distribuir bem.','Cabelo volumoso: divida em seções e use mais produto na aplicação.'][v.den]]);
+r.push([`Ressecamento ${RE[v.res]}`,['Mantenha o cronograma regular e reforce a proteção contra calor e sol.','Priorize hidratação e nutrição, com reconstrução quinzenal.','Aumente hidratação e nutrição, faça reconstrução com frequência controlada e avalie corte das pontas.'][v.res]]);
+const fr=[4,3,2,2][v.tipo];
+const el=$('#perfil');el.className='res card on';el.innerHTML=`<h3>Seu perfil: cabelo ${T[v.tipo]} ${CU[v.cur]}, ${ES[v.esp]}, porosidade ${PO[v.por]}</h3>`+r.map(x=>`<p><b>${x[0]}.</b> ${x[1]}</p>`).join('')+`<p><button class="btn" data-res="${fr},${v.res}">Montar cronograma para este perfil</button></p>`;el.scrollIntoView({block:'nearest'})}
+// Cronograma
+const NM={H:'Hidratação',N:'Nutrição',R:'Reconstrução'};
+function pat(r){return [['H','N','H','N','R','N'],['H','N','R'],['H','N','R','H','N','R']][r]}
+function washDays(n){const s=new Set();for(let i=0;i<n;i++)s.add(Math.round(i*7/n)%7);return s}
+function drawCal(){const n=+$('#freq').value,r=+$('#ress').value,m=$('#vis').value=='m',wd=washDays(n),p=pat(r),dn=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];let k=0,h=dn.map(d=>`<div class="hd">${d}</div>`).join('');
+const cell=(day,idx)=>{if(!wd.has(idx))return`<div>${day||''}<b></b></div>`;const t=p[k++%p.length];return`<div class="${t}"><b>${day||dn[idx]}</b>${NM[t]}</div>`};
+if(!m){for(let i=0;i<7;i++)h+=cell('',i)}else{const now=new Date(),y=now.getFullYear(),mo=now.getMonth(),first=(new Date(y,mo,1).getDay()+6)%7,days=new Date(y,mo+1,0).getDate();for(let i=0;i<first;i++)h+='<div style="visibility:hidden"></div>';for(let d=1;d<=days;d++)h+=cell(d,(first+d-1)%7)}
+$('#cal').innerHTML=h;$('#calnote').textContent=`${n} lavagem${n>1?'ns':''} por semana. Ciclo de tratamento: ${p.map(x=>NM[x]).join(' → ')}. Ajuste conforme a resposta dos seus fios.`}
+['#freq','#ress','#vis'].forEach(s=>$(s).addEventListener('input',drawCal));
+// Busca global
+$('#q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.value.trim().toLowerCase();if(!q)return;
+const l=FAV_ITEMS().filter(i=>(i.t+i.d).toLowerCase().includes(q)).slice(0,12);
+$('#dbody').innerHTML=`<h3>Resultados para “${E(q)}”</h3>`+(l.length?l.map(i=>`<p><small>${i.k}</small><br><b>${E(i.t)}</b><br>${E(i.d.slice(0,110))}…</p>`).join(''):'<p class="empty">Nada encontrado. Tente outra palavra, como “porosidade” ou “pantenol”.</p>');dlg.showModal()});
+// Tema
+$('#tema').onclick=()=>{const d=document.documentElement,dark=getComputedStyle(d).colorScheme.includes('dark');d.dataset.theme=dark?'light':'dark';if(!dark)d.dataset.theme='dark'};
+init();const sp=get('perfil',null);if(sp)showPerfil(sp);
+</script></body></html>
